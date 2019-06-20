@@ -1,0 +1,18 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/search/search",
+    "pages/upload/upload",
+    "pages/question/question"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#17abe3",
+    "navigationBarTitleText": "C W R",
+    "navigationStyle": "custom"
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "my-header": "../../components/header/header"
+  }
+}

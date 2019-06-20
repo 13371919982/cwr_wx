@@ -1,0 +1,15 @@
+<view class='tabbar'>
+  <view 
+    class='tab-item' 
+    wx:for='{{ tabbarList }}' 
+    wx:key='content' 
+    bindtap='change'
+    data-content='{{ item.content }}'
+    >
+    <image
+      class='icon' 
+      src='{{ currentPage === item.content ? item.activePath : item.path }}'
+    ></image>
+    <view class='tab-title' style='color:{{ currentPage === item.content ? "#17abe3" : "" }}'>{{ item.title }}</view>
+  </view>
+</view>

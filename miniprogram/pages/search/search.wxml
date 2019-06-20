@@ -1,0 +1,5 @@
+<my-header 
+  title='{{ kwords }}'
+  back
+  bindbeforeBack='back'
+/>

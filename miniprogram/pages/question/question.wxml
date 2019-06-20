@@ -1,0 +1,24 @@
+<my-header 
+  title='{{ key }} : 答题 剩余时间 : {{ m < 10 ? "0" + m : m }}:{{ s < 10 ? "0" + s : s }}'
+  back
+  bindbeforeBack='confirm'
+/>
+
+<view class='container'>
+  <view class='progress'>{{ current }}/{{ questionList.length }}</view>
+  <swiper class='swiper' current='{{ current }}' bindchange='change'>
+    <swiper-item wx:for='{{ questionList }}' wx:key='{{ item._id }}'>
+      <view class='description'>{{ item.description }}</view>
+      <view class='code'>{{ item.code }}</view>
+      <radio-group class='radio-group' bindchange='radioChange'>
+        <label class='radio' wx:for='{{ item.selection }}' wx:key='{{ item.index }}'>
+          <radio value='{{ item.value }}'>{{ item.value }}</radio>
+        </label>
+      </radio-group>
+    </swiper-item>
+  </swiper>
+  <view class='btns'>
+    <button bindtap='prev'>上一题</button>
+    <button bindtap='next'>下一题</button>
+  </view>
+</view>

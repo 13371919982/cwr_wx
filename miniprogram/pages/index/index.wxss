@@ -1,0 +1,6 @@
+.swiper swiper-item{
+  overflow-y: scroll;
+}
+.swiper swiper-item::-webkit-scrollbar{
+  display: none;
+}

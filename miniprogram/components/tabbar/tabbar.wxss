@@ -1,0 +1,20 @@
+.tabbar{
+  position: fixed;
+  display: flex;
+  width: 750rpx;
+  height: 150rpx;
+  border-top: 1px solid #ccc;
+  bottom: 0;
+  left: 0;
+  color: #ccc;
+}
+.tabbar>.tab-item{
+  width: 750rpx;
+  height: 100%;
+  padding: 15rpx 0;
+  text-align: center;
+}
+.icon{
+  width: 50rpx;
+  height: 50rpx;
+}

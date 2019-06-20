@@ -1,0 +1,32 @@
+.container{
+  width: 710rpx;
+  margin: 0 auto;
+  color: #aaa;
+}
+.progress{
+  line-height: 60rpx;
+  text-align: right;
+}
+.swiper{
+  height: 1000rpx;
+}
+.description,.code{
+  margin: 40rpx 0;
+}
+.radio{
+  display: block;
+  width: 710rpx;
+  line-height: 100rpx;
+}
+.btns{
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 710rpx;
+  margin: 0 auto;
+}
+button{
+  width: 330rpx;
+  color: #aaa;
+}

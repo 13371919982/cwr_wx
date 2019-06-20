@@ -1,0 +1,12 @@
+<view class='header' style='height:{{ height }}px'>
+  <view class='title' style='line-height:{{ contentHeight }}px'>
+  <image 
+    class='back' 
+    wx:if='{{ back }}' 
+    src='../../static/icon/back.png'
+    bindtap='back'
+  ></image>
+  <text class='title-content'>{{ title }}</text>
+  </view>
+</view>
+

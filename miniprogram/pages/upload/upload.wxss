@@ -1,0 +1,44 @@
+.container{
+  width: 94vw;
+  margin: 0 auto;
+}
+.description{
+  height: 150rpx;
+}
+.title{
+  font-size: 40rpx;
+  line-height: 60rpx;
+  text-align: center;
+  font-weight: blod;
+  color: #aaa;
+}
+.container>view{
+  margin-top: 20rpx;
+  color: #aaa;
+}
+.choose{
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+}
+.choose>text{
+  margin-right: 20rpx;
+}
+button{
+  margin-top: 20rpx;
+  color: #aaa;
+}
+view text{
+  line-height: 60rpx;
+}
+textarea,input{
+  width: 94vw;
+  border: 1px solid #ccc;
+}
+.ans{
+  display: flex;
+  align-items: center;
+}
+.ans>text{
+  margin-right: 20rpx;
+}

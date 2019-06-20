@@ -1,0 +1,17 @@
+<swiper 
+  class='courses'
+  autoplay
+  interval='3000'
+  circular='true' 
+>
+  <swiper-item 
+    class='flex' 
+    wx:for='{{ courses }}' 
+    wx:key=''
+  >
+    <view class='list' wx:for='{{ item }}' wx:key=''>
+      <image src='https://res.shiguangkey.com/{{ item.cover }}'></image>
+      <view class='title'>{{ item.courseName }}</view>
+    </view>
+  </swiper-item>
+</swiper>

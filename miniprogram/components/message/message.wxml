@@ -1,0 +1,2 @@
+<button bindtap='chooseQuestion' data-key='all'>全部题目</button>
+<button bindtap='chooseQuestion' data-key='random'>随机生成</button>

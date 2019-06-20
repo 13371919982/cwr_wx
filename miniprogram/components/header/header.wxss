@@ -1,0 +1,20 @@
+/* components/header/header.wxss */
+.header{
+  position: relative;
+  background: linear-gradient( 30deg,#ffd26f,#3677ff)
+}
+.back{
+  margin: 0 14rpx;
+  width: 16px;
+  height: 16px;
+  vertical-align: -2px;
+}
+.title{
+  position: absolute;
+  bottom: 5px;
+  color: #fff;
+}
+.title-content{
+  margin-left: 20rpx;
+  color: #fff;
+}

@@ -1,0 +1,5 @@
+<picker 
+  mode='selector' 
+  range='{{ mySelection }}'
+  bindchange='change'
+>请选择<image src='../../../static/icon/down.png'/> </picker>

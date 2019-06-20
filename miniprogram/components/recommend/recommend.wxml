@@ -1,0 +1,35 @@
+<view class='search' bindtap='jumpToSearch'>
+  <image class='search-btn' src='../../static/icon/search.png'></image>
+  <text class='content'>请输入你要查找的课程</text>
+</view>
+
+<!-- 提示关键词 -->
+<scroll-view 
+  class='select'
+  scroll-x
+> 
+  <view 
+    wx:for='{{ selectList }}' 
+    wx:key='{{ name }}'
+    bindtap='search'
+    data-kwords='{{ item.name }}'
+  >{{ item.name }}</view>
+</scroll-view>
+
+<!-- 轮播图 -->
+<swiper 
+  class='swiper' 
+  autoplay 
+  interval='3000' 
+  circular='true' 
+  indicator-dots 
+  indicator-active-color='#fff'
+>
+  <swiper-item class='swiper-item' wx:for='{{ swiperList }}' wx:key='{{ item.id }}'>
+    <image class='image' src='{{ item.icon }}' mode='aspectFill'></image>
+  </swiper-item>
+</swiper>
+
+<!-- 课程 -->
+<view class='title'>- 精品小课 -</view>
+<my-courselist />

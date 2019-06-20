@@ -1,0 +1,42 @@
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 30rpx;
+  height: 80rpx;
+  background-color: #eee;
+  border-radius: 10rpx;
+}
+.search-btn{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.search>.content{
+  color: #aaa;
+}
+.select{
+  display: flex;
+  width: 100vw;
+  line-height: 80rpx;
+  white-space: nowrap;
+}
+.select view{
+  display: inline-block;
+  margin: 0 30rpx;
+  font-weight: bold;
+  color: #aaa;
+}
+.swiper{
+  padding: 0 20rpx;
+  
+}
+.swiper,.swiper .swiper-item,.swiper .swiper-item .image{
+  height: 320rpx;
+}
+.title{
+  text-align: center;
+  line-height: 80rpx;
+  color: #444;
+  font-weight: bold;
+}
