@@ -81,7 +81,7 @@ Page({
 
   // 滑动切换题目处理
   change(e) {
-    if (e.detail.current === this.data.questionList.length) return
+    if (e.detail.current === this.data.questionList.length - 1) return
     this.setData({
       current: e.detail.current++
     })
@@ -89,9 +89,9 @@ Page({
 
   // 下一题
   next() {
-    if (this.data.current === this.data.questionList.length) return
+    if (this.data.current === this.data.questionList.length - 1) return
     this.setData({
-      current: this.data.current+1
+      current: this.data.current + 1
     })
   },
 
@@ -99,7 +99,7 @@ Page({
   prev() {
     if (this.data.current === 1) return
     this.setData({
-      current: this.data.current-1
+      current: this.data.current - 1
     })
   }
 })

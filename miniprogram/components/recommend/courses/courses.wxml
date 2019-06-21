@@ -9,7 +9,7 @@
     wx:for='{{ courses }}' 
     wx:key=''
   >
-    <view class='list' wx:for='{{ item }}' wx:key=''>
+    <view class='list' wx:for='{{ item }}' wx:key='{{ item.id }}' bindtap='courseDetail' data-courseId='{{ item.id }}'>
       <image src='https://res.shiguangkey.com/{{ item.cover }}'></image>
       <view class='title'>{{ item.courseName }}</view>
     </view>

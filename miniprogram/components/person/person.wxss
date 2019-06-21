@@ -1,3 +1,24 @@
+.logincover{
+  position: absolute;
+  width: 750rpx;
+  height: 250rpx;
+  opacity: 0;
+}
+.login{
+  display: flex;
+  align-items: center;
+  margin-bottom: 150rpx;
+  box-shadow: 0 0 50rpx #ccc;
+  color: #aaa;
+}
+.head-icon{
+  width: 150rpx;
+  height: 150rpx;
+  margin: 50rpx;
+}
+.nickname{
+  font-size: 40rpx;
+}
 button{
   margin-top: 20rpx;
   color: #aaa;

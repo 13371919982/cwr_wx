@@ -1,1 +1,31 @@
+<button wx:if='{{ !isLogin }}' class='logincover' open-type='getUserInfo' bindgetuserinfo='login'>登录</button>
+<view class='login' bindtap='setUserInfo'>
+  <image class='head-icon' src='{{ headSrc }}'></image>
+  <text class='nickname'>{{ nickName }}</text>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <button bindtap='upload'>上传题目</button>

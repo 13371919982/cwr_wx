@@ -18,10 +18,16 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    courseDetail(e) {
+      const courseId = e.currentTarget.dataset.courseid
+      wx.navigateTo({
+        url: `/pages/courseDetail/courseDetail?courseId=${ courseId }`,
+      })
+    }
   },
 
   lifetimes: {
+    // 请求课程列表 转换成实现二维数组
     attached() {
       let promiseList = []
       for(let i = 1; i < 5; i++) {
